@@ -25,15 +25,6 @@ $Card = new Card();
 $Common = new Common();
 
 
-
-if(!$User->checkLoginStatus()){
-
-	$Common->redirect('index.php');
-
-}
-
-
-
 $ids = array();
 
 if(isset($_POST)){
