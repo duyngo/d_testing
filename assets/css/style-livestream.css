@@ -1,0 +1,236 @@
+/*=========
+general css start
+==========*/
+/**+html {
+	margin:0px;
+	padding:0px;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, header, footer, section, nav {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight:normal;
+	margin:0px;
+	padding:0px;
+}
+img {
+	border:0px;
+	outline:none;
+}
+p {
+	margin:0px;
+	padding:0px 0px 15px 0px;
+}
+ul li, ol li {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}*/
+.floatleft {
+	float:left;
+}
+.floatright {
+	float:right;
+}
+.flclear {
+	float:none;
+	clear:both;
+}
+.spacer2 {
+	height:2px;
+}
+.spacer5 {
+	height:5px;
+}
+.spacer10 {
+	height:10px;
+}
+.spacer15 {
+	height:15px;
+}
+.spacer20 {
+	height:20px;
+}
+.spacer30 {
+	height:30px;
+}
+.spacer40 {
+	height:40px;
+}
+input[type="text"]:focus, textarea:focus { }
+/*=============
+general css END
+============*/
+/*body {	
+    background: #fff;
+	width:100%;
+	margin:0 auto;
+	padding:0px;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	color:#000;
+	text-decoration:none;
+}*/
+a{ color:#3598db;text-decoration:none;}
+a:hover{ color:#3598db; text-decoration:none; }
+a:focus{ text-decoration:none; outline:none; outline-offset:0px;}
+.imgwidth img{width:100%;}
+.header
+{
+	background:#e5e5e5 url(../images/header-bg.jpg) repeat-x top center;
+	/*border-top:solid 3px #c90d25;*/
+	margin-bottom:10px;
+}
+.header .player_title
+{
+	font-size: 36px;
+    color: #fff;
+    /*color: #092c7b;*/
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    border: none;
+    text-align: center;
+    padding: 20px 0px;
+    height: auto;
+}
+.live_channel_list
+{
+	margin-left: -3%;
+    margin-top: -3%;
+}
+.live_channel_list li {
+    position: relative;
+    width: 30.33%;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.live_channel_list li img
+{
+	width:100%;
+}
+.channel_num_select_wrap {
+    margin: 5px 0 10px 0;
+}
+.category
+{
+	/*margin:30px 0px;
+	background:#eee;
+	border-top:solid 1px #ddd;
+	border-bottom:solid 1px #ddd;
+	padding:15px 0px;*/
+	margin-top: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 10px 15px 15px 15px;
+    background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+}
+.sport_category_item {
+    position: relative;
+    width: 12.5%;
+    text-align: center;
+}
+.sport_category_item a {
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid #c6c6c6;*/
+    margin-right: -1px;
+    transition: background-color 0.2s ease;
+}
+.sport_category_item a:hover {
+    background-color: #092c7b;
+    box-shadow: inset 0 0 15px 0;
+}
+.channel_on, .channel_off {   
+    border: none;   
+    border-radius: 20px;
+    background: #092c7b;
+	color:#fff;
+}
+.channel_on {   
+    border: none;   
+    border-radius: 20px;
+    background: #c90d25;
+}
+.channel_item:hover {
+    background: #e3e3e3;
+}
+.graybg{background:#f2f2f2;}
+.channel_item {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #dee2e6;	
+}
+.sport_channel_wrap {
+    margin:0px 0 30px 0;
+    border:none;
+}
+
+
+
+@media (max-width:991px) {
+.marbotmob
+{
+	margin-bottom:30px;
+}
+.sport_channel_6
+{
+	width:15%;
+}
+.sport_channel_2 {
+    width: 15%;
+}
+.sport_channel_3 {
+    width: 42%;
+}
+.sport_channel_4 {
+    width: 12%;
+}
+.header{margin-bottom:5px;}
+.marbotmob {
+    margin-bottom: 15px;
+}
+
+
+}
+
+@media (max-width:767px) {
+.sport_category_item {
+    position: relative;
+    width: 25%;
+    text-align: center;
+}
+.channel_item {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #dee2e6;
+	width:767px;
+}
+.scrolldiv ul
+{
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+}
+
+
+.sport_channel_wrap .ch1_select .sport_channel_6{display: none !important;} 
+
+.media_1ch_wrap.videos2,.media_2ch_wrap.videos2{
+	width: 50% !important;
+	float: left;
+} 
+ 
+
+ .media_3ch_wrap.videos3 , .media_2ch_wrap.videos3
+ {
+ 	width: 50% !important;
+ 	float: left;
+ }
+ .media_1ch_wrap.videos4,.media_2ch_wrap.videos4,.media_3ch_wrap.videos4,.media_4ch_wrap.videos4{
+ 	width: 50% !important;
+ 	float: left;
+ }
+.media_3ch_wrap.videos4{clear:both;}

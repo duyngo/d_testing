@@ -1,0 +1,1818 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>영상</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="stylesheet" type="text/css" href="./assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/app.css?0.111">
+    <script>
+        var isInIFrame = (window.location != window.parent.location);
+        if (isInIFrame == false) {
+            location.href = "http://" + document.domain;
+        }
+    </script>
+</head>
+<body>
+<main class="container">
+    <section class="media_wrap">
+        <div class="player_title"></div>
+        <div class="media_1ch_wrap">
+            <div id="player1_stream">
+                <div id="player1"></div>
+            </div>
+        </div>
+    </section>
+    <section class="channel_num_select_wrap">
+    <ul class="horizon_block_wrap">
+        <li class="channel_num_select_item horizon_block">
+            <a href="?lc=&tg=1ch&ch=live01&ca=0"
+               class="active">
+                <img src="./assets/images/11.png" alt="멀티 1채널">
+            </a>
+        </li>
+        <li class="channel_num_select_item horizon_block">
+            <a href="?lc=&tg=2ch&ch=live01&ca=0" class="">
+                <img src="./assets/images/22.png" alt="멀티 2채널">
+            </a>
+        </li>
+        <li class="channel_num_select_item horizon_block">
+            <a href="?lc=&tg=3ch&ch=live01&ca=0" class="">
+                <img src="./assets/images/33.png" alt="멀티 3채널">
+            </a>
+        </li>
+        <li class="channel_num_select_item horizon_block">
+            <a href="?lc=&tg=4ch&ch=live01&ca=0" class="">
+                <img src="./assets/images/44.png" alt="멀티 4채널">
+            </a>
+        </li>
+
+    </ul>
+</section>    <section class="live_channel_wrap">
+    <ul class="live_channel_list horizon_block_wrap">
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live01"
+                   data-title="JTBC">
+                    <img src="./assets/images/channel/JTBC_on.png"
+                         alt="JTBC">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live03"
+                   data-title="슈퍼액션">
+                    <img src="./assets/images/channel/슈퍼액션_on.png"
+                         alt="슈퍼액션">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live05"
+                   data-title="OCN">
+                    <img src="./assets/images/channel/OCN_on.png"
+                         alt="OCN">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live04"
+                   data-title="CGV">
+                    <img src="./assets/images/channel/CGV_on.png"
+                         alt="CGV">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live06"
+                   data-title="TVN">
+                    <img src="./assets/images/channel/TVN_on.png"
+                         alt="TVN">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live07"
+                   data-title="MBC">
+                    <img src="./assets/images/channel/MBC_on.png"
+                         alt="MBC">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live14"
+                   data-title="SBS">
+                    <img src="./assets/images/channel/SBS_on.png"
+                         alt="SBS">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live15"
+                   data-title="KBS1">
+                    <img src="./assets/images/channel/KBS1_on.png"
+                         alt="KBS1">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live13"
+                   data-title="KBS2">
+                    <img src="./assets/images/channel/KBS2_on.png"
+                         alt="KBS2">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live10"
+                   data-title="음악">
+                    <img src="./assets/images/channel/음악_on.png"
+                         alt="음악">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live37"
+                   data-title="J_Golf">
+                    <img src="./assets/images/channel/J_Golf_on.png"
+                         alt="J_Golf">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live11"
+                   data-title="XTM">
+                    <img src="./assets/images/channel/XTM_on.png"
+                         alt="XTM">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live26"
+                   data-title="sbs_golf">
+                    <img src="./assets/images/channel/sbs_golf_on.png"
+                         alt="sbs_golf">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live12"
+                   data-title="코미디TV">
+                    <img src="./assets/images/channel/코미디TV_on.png"
+                         alt="코미디TV">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live21"
+                   data-title="mbc_dramanet">
+                    <img src="./assets/images/channel/mbc_dramanet_on.png"
+                         alt="mbc_dramanet">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live22"
+                   data-title="mbc_every1">
+                    <img src="./assets/images/channel/mbc_every1_on.png"
+                         alt="mbc_every1">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live02"
+                   data-title="채널A">
+                    <img src="./assets/images/channel/채널A_on.png"
+                         alt="채널A">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live08"
+                   data-title="EBS">
+                    <img src="./assets/images/channel/EBS_on.png"
+                         alt="EBS">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live09"
+                   data-title="캐치온">
+                    <img src="./assets/images/channel/캐치온_on.png"
+                         alt="캐치온">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live16"
+                   data-title="JTBC2">
+                    <img src="./assets/images/channel/JTBC2_on.png"
+                         alt="JTBC2">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live17"
+                   data-title="fox">
+                    <img src="./assets/images/channel/fox_on.png"
+                         alt="fox">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live18"
+                   data-title="JTBC3">
+                    <img src="./assets/images/channel/JTBC3_on.png"
+                         alt="JTBC3">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live19"
+                   data-title="kbs_drama">
+                    <img src="./assets/images/channel/kbs_drama_on.png"
+                         alt="kbs_drama">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live20"
+                   data-title="kbs_joy">
+                    <img src="./assets/images/channel/kbs_joy_on.png"
+                         alt="kbs_joy">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live23"
+                   data-title="mbn">
+                    <img src="./assets/images/channel/mbn_on.png"
+                         alt="mbn">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live24"
+                   data-title="ogn">
+                    <img src="./assets/images/channel/ogn_on.png"
+                         alt="ogn">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live25"
+                   data-title="olive">
+                    <img src="./assets/images/channel/olive_on.png"
+                         alt="olive">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live27"
+                   data-title="sbs_plus">
+                    <img src="./assets/images/channel/sbs_plus_on.png"
+                         alt="sbs_plus">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live28"
+                   data-title="SCREEN">
+                    <img src="./assets/images/channel/SCREEN_on.png"
+                         alt="SCREEN">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live29"
+                   data-title="skydrama">
+                    <img src="./assets/images/channel/skydrama_on.png"
+                         alt="skydrama">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live30"
+                   data-title="spotvgame">
+                    <img src="./assets/images/channel/spotvgame_on.png"
+                         alt="spotvgame">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live31"
+                   data-title="빌리어즈티비">
+                    <img src="./assets/images/channel/빌리어즈티비_on.png"
+                         alt="빌리어즈티비">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live32"
+                   data-title="연합뉴스">
+                    <img src="./assets/images/channel/연합뉴스_on.png"
+                         alt="연합뉴스">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live33"
+                   data-title="TV조선">
+                    <img src="./assets/images/channel/TV조선_on.png"
+                         alt="TV조선">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live34"
+                   data-title="YTN">
+                    <img src="./assets/images/channel/YTN_on.png"
+                         alt="YTN">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live35"
+                   data-title="캐치온2">
+                    <img src="./assets/images/channel/캐치온2_on.png"
+                         alt="캐치온2">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live36"
+                   data-title="드라맥스">
+                    <img src="./assets/images/channel/드라맥스_on.png"
+                         alt="드라맥스">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live38"
+                   data-title="M-net">
+                    <img src="./assets/images/channel/M-net_on.png"
+                         alt="M-net">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live39"
+                   data-title="투니버스">
+                    <img src="./assets/images/channel/투니버스_on.png"
+                         alt="투니버스">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+                    <!--            <li class="ch1_select live_channel_list_item horizon_block" data-id="--><!--" >-->
+            <li class="live_channel_list_item horizon_block">
+                <a class="ch1_select" data-stream="live40"
+                   data-title="SPO-TV">
+                    <img src="./assets/images/channel/SPO-TV_on.png"
+                         alt="SPO-TV">
+                    <!--<img src=""
+                     onMouseOver="this.src=''"
+                     onMouseOut="this.src=''"
+                     alt="">-->
+                </a>
+                <!--                <ul id="live_channel_select-->
+                <!--" class="live_channel_select_wrap horizon_block_wrap">-->
+                <!--                    <li class="horizon_block">-->
+                <!--                        <a class="ch1_select" data-stream="-->
+                <!--">-->
+                <!--                            <img class="channel_img" src="./images/1ch.png" alt="1ch">-->
+                <!--                        </a>-->
+                <!--                    </li>-->
+                <!--                </ul>-->
+            </li>
+            </ul>
+</section>    <section class="sport_category_wrap">
+    <ul class="horizon_block_wrap">
+        <li class="sport_category_item horizon_block">
+                        <a href="?lc=&tg=1ch&ch=live01&ca=0">
+                <div class="sport_category_1"></div>
+                                    <span class="sport_category_count">1</span>
+                            </a>
+        </li>
+        <li class="sport_category_item horizon_block">
+                        <a href="?lc=&tg=1ch&ch=live01&ca=1">
+                <div class="sport_category_2"></div>
+                            </a>
+        </li>
+
+        <li class="sport_category_item horizon_block">
+                        <a href="?lc=&tg=1ch&ch=live01&ca=4">
+                <div class="sport_category_3"></div>
+                            </a>
+        </li>
+
+        <li class="sport_category_item horizon_block">
+                        <a href="?lc=&tg=1ch&ch=live01&ca=2">
+                <div class="sport_category_4"></div>
+                            </a>
+        </li>
+
+        <li class="sport_category_item horizon_block">
+                        <a href="?lc=&tg=1ch&ch=live01&ca=3">
+                <div class="sport_category_5"></div>
+                            </a>
+        </li>
+
+        <li class="sport_category_item horizon_block">
+                        <a href="?lc=&tg=1ch&ch=live01&ca=5">
+                <div class="sport_category_6"></div>
+                            </a>
+        </li>
+
+        <li class="sport_category_item horizon_block">
+                        <a href="?lc=&tg=1ch&ch=live01&ca=6">
+                <div class="sport_category_7"></div>
+                            </a>
+        </li>
+
+        <li class="sport_category_item horizon_block">
+                        <a href="?lc=&tg=1ch&ch=live01&ca=8">
+                <div class="sport_category_8"></div>
+                            </a>
+        </li>
+
+        <li class="sport_category_item horizon_block">
+                        <a href="?lc=&tg=1ch&ch=live01&ca=7">
+                <div class="sport_category_9"></div>
+                            </a>
+        </li>
+
+        <li class="sport_category_item horizon_block">
+                        <a href="?lc=&tg=1ch&ch=live01&ca=10">
+                <div class="sport_category_10"></div>
+                            </a>
+        </li>
+
+        <li class="sport_category_item horizon_block">
+                        <a href="?lc=&tg=1ch&ch=live01&ca=9">
+                <div class="sport_category_11"></div>
+                <span class="sport_category_count">
+                    1</span>            </a>
+        </li>
+    </ul>
+</section>    <section class="sport_channel_wrap">
+        <ul>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE998"
+                    data-title="로그  원: 스타워즈 스토리">
+                    <div class="sport_channel_6 horizon_block">LIVE998</div>
+                    <div class="sport_channel_2 horizon_block">06-04 15:00</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/9.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>로그  원: 스타워즈 스토리</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_on">방송보기</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE109"
+                    data-title="2018 프랑스오픈 테니스 16강">
+                    <div class="sport_channel_6 horizon_block">LIVE109</div>
+                    <div class="sport_channel_2 horizon_block">06-04 18:00</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/9.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>2018 프랑스오픈 테니스 16강</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE110"
+                    data-title="보은상무 vs 인천현대제철">
+                    <div class="sport_channel_6 horizon_block">LIVE110</div>
+                    <div class="sport_channel_2 horizon_block">06-04 18:45</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/1.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>보은상무 </span>
+                            <span>vs</span>
+                            <span> 인천현대제철</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE111"
+                    data-title="수원도시공사 vs 화천KSPO ">
+                    <div class="sport_channel_6 horizon_block">LIVE111</div>
+                    <div class="sport_channel_2 horizon_block">06-04 18:45</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/1.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>수원도시공사 </span>
+                            <span>vs</span>
+                            <span> 화천KSPO </span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE201"
+                    data-title="코크 시티 FC vs 데리 시티 FC ">
+                    <div class="sport_channel_6 horizon_block">LIVE201</div>
+                    <div class="sport_channel_2 horizon_block">06-04 23:00</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/1.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>코크 시티 FC </span>
+                            <span>vs</span>
+                            <span> 데리 시티 FC </span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE202"
+                    data-title="인도 vs 케냐">
+                    <div class="sport_channel_6 horizon_block">LIVE202</div>
+                    <div class="sport_channel_2 horizon_block">06-04 23:30</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/1.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>인도 </span>
+                            <span>vs</span>
+                            <span> 케냐</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE203"
+                    data-title="몰도바 vs 몰타">
+                    <div class="sport_channel_6 horizon_block">LIVE203</div>
+                    <div class="sport_channel_2 horizon_block">06-05 00:00</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/1.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>몰도바 </span>
+                            <span>vs</span>
+                            <span> 몰타</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE205"
+                    data-title="Finn Harps vs 롱퍼드 타운 FC ">
+                    <div class="sport_channel_6 horizon_block">LIVE205</div>
+                    <div class="sport_channel_2 horizon_block">06-05 01:00</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/1.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>Finn Harps </span>
+                            <span>vs</span>
+                            <span> 롱퍼드 타운 FC </span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE204"
+                    data-title="셸본 vs 드로이다 유나이티드">
+                    <div class="sport_channel_6 horizon_block">LIVE204</div>
+                    <div class="sport_channel_2 horizon_block">06-05 01:00</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/1.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>셸본 </span>
+                            <span>vs</span>
+                            <span> 드로이다 유나이티드</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE206"
+                    data-title="옌셰핑스 셰드라 IF vs AFC 에스킬스투나">
+                    <div class="sport_channel_6 horizon_block">LIVE206</div>
+                    <div class="sport_channel_2 horizon_block">06-05 01:00</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/1.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>옌셰핑스 셰드라 IF </span>
+                            <span>vs</span>
+                            <span> AFC 에스킬스투나</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE501"
+                    data-title="뉴욕 양키스 vs 디트로이트">
+                    <div class="sport_channel_6 horizon_block">LIVE501</div>
+                    <div class="sport_channel_2 horizon_block">06-05 02:10</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/4.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>뉴욕 양키스 </span>
+                            <span>vs</span>
+                            <span> 디트로이트</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE207"
+                    data-title="세르비아 vs 칠레">
+                    <div class="sport_channel_6 horizon_block">LIVE207</div>
+                    <div class="sport_channel_2 horizon_block">06-05 03:00</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/1.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>세르비아 </span>
+                            <span>vs</span>
+                            <span> 칠레</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE208"
+                    data-title="슬로바키아 vs 모로코">
+                    <div class="sport_channel_6 horizon_block">LIVE208</div>
+                    <div class="sport_channel_2 horizon_block">06-05 03:00</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/1.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>슬로바키아 </span>
+                            <span>vs</span>
+                            <span> 모로코</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE209"
+                    data-title="Cobh Ramblers vs 골웨이 유나이티드 FC">
+                    <div class="sport_channel_6 horizon_block">LIVE209</div>
+                    <div class="sport_channel_2 horizon_block">06-05 03:15</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/1.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>Cobh Ramblers </span>
+                            <span>vs</span>
+                            <span> 골웨이 유나이티드 FC</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE210"
+                    data-title="이탈리아 vs 네덜란드">
+                    <div class="sport_channel_6 horizon_block">LIVE210</div>
+                    <div class="sport_channel_2 horizon_block">06-05 03:45</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/1.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>이탈리아 </span>
+                            <span>vs</span>
+                            <span> 네덜란드</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE211"
+                    data-title="푈니르 레이캬비크 vs 발루르">
+                    <div class="sport_channel_6 horizon_block">LIVE211</div>
+                    <div class="sport_channel_2 horizon_block">06-05 04:15</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/1.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>푈니르 레이캬비크 </span>
+                            <span>vs</span>
+                            <span> 발루르</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE212"
+                    data-title="FH 하프나르피외르뒤르 vs 케플라비크 IF">
+                    <div class="sport_channel_6 horizon_block">LIVE212</div>
+                    <div class="sport_channel_2 horizon_block">06-05 04:15</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/1.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>FH 하프나르피외르뒤르 </span>
+                            <span>vs</span>
+                            <span> 케플라비크 IF</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE213"
+                    data-title="UMF 그린다비크 vs 필키르">
+                    <div class="sport_channel_6 horizon_block">LIVE213</div>
+                    <div class="sport_channel_2 horizon_block">06-05 04:15</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/1.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>UMF 그린다비크 </span>
+                            <span>vs</span>
+                            <span> 필키르</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE214"
+                    data-title="클루브 솔 데 아메리카 vs General Diaz">
+                    <div class="sport_channel_6 horizon_block">LIVE214</div>
+                    <div class="sport_channel_2 horizon_block">06-05 06:00</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/1.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>클루브 솔 데 아메리카 </span>
+                            <span>vs</span>
+                            <span> General Diaz</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE215"
+                    data-title="파라나 클루비 vs 플루미넨시 FC">
+                    <div class="sport_channel_6 horizon_block">LIVE215</div>
+                    <div class="sport_channel_2 horizon_block">06-05 08:00</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/1.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>파라나 클루비 </span>
+                            <span>vs</span>
+                            <span> 플루미넨시 FC</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE502"
+                    data-title="뉴욕 양키스 vs 디트로이트 (tv)">
+                    <div class="sport_channel_6 horizon_block">LIVE502</div>
+                    <div class="sport_channel_2 horizon_block">06-05 08:10</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/4.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>뉴욕 양키스 </span>
+                            <span>vs</span>
+                            <span> 디트로이트 (tv)</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE216"
+                    data-title="3 데 페브레로 vs 스포르티보 루케뇨">
+                    <div class="sport_channel_6 horizon_block">LIVE216</div>
+                    <div class="sport_channel_2 horizon_block">06-05 08:40</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/1.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>3 데 페브레로 </span>
+                            <span>vs</span>
+                            <span> 스포르티보 루케뇨</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE560"
+                    data-title="베가스 vs 워싱턴">
+                    <div class="sport_channel_6 horizon_block">LIVE560</div>
+                    <div class="sport_channel_2 horizon_block">06-05 09:00</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/5.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>베가스 </span>
+                            <span>vs</span>
+                            <span> 워싱턴</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE217"
+                    data-title="Delfin SC vs 우니베르시다드 카톨리카 델 에콰도르">
+                    <div class="sport_channel_6 horizon_block">LIVE217</div>
+                    <div class="sport_channel_2 horizon_block">06-05 09:15</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/1.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>Delfin SC </span>
+                            <span>vs</span>
+                            <span> 우니베르시다드 카톨리카 델 에콰도르</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE503"
+                    data-title="캔자스시트 vs LA에인절스 (tv)">
+                    <div class="sport_channel_6 horizon_block">LIVE503</div>
+                    <div class="sport_channel_2 horizon_block">06-05 11:07</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/4.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>캔자스시트 </span>
+                            <span>vs</span>
+                            <span> LA에인절스 (tv)</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE504"
+                    data-title="애틀랜타 vs 샌디에이고">
+                    <div class="sport_channel_6 horizon_block">LIVE504</div>
+                    <div class="sport_channel_2 horizon_block">06-05 11:10</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/4.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>애틀랜타 </span>
+                            <span>vs</span>
+                            <span> 샌디에이고</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE505"
+                    data-title="애리조나 vs 샌프란시스코 (tv)">
+                    <div class="sport_channel_6 horizon_block">LIVE505</div>
+                    <div class="sport_channel_2 horizon_block">06-05 11:10</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/4.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>애리조나 </span>
+                            <span>vs</span>
+                            <span> 샌프란시스코 (tv)</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE551"
+                    data-title="미국 vs 러시아">
+                    <div class="sport_channel_6 horizon_block">LIVE551</div>
+                    <div class="sport_channel_2 horizon_block">06-05 17:00</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/3.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>미국 </span>
+                            <span>vs</span>
+                            <span> 러시아</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE552"
+                    data-title="터키 vs 일본">
+                    <div class="sport_channel_6 horizon_block">LIVE552</div>
+                    <div class="sport_channel_2 horizon_block">06-05 17:05</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/3.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>터키 </span>
+                            <span>vs</span>
+                            <span> 일본</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE511"
+                    data-title="니혼햄 vs 히로시마">
+                    <div class="sport_channel_6 horizon_block">LIVE511</div>
+                    <div class="sport_channel_2 horizon_block">06-05 18:00</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/4.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>니혼햄 </span>
+                            <span>vs</span>
+                            <span> 히로시마</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE509"
+                    data-title="치바롯데 vs 주니치">
+                    <div class="sport_channel_6 horizon_block">LIVE509</div>
+                    <div class="sport_channel_2 horizon_block">06-05 18:00</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/4.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>치바롯데 </span>
+                            <span>vs</span>
+                            <span> 주니치</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE508"
+                    data-title="세이부 vs 요코하마">
+                    <div class="sport_channel_6 horizon_block">LIVE508</div>
+                    <div class="sport_channel_2 horizon_block">06-05 18:00</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/4.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>세이부 </span>
+                            <span>vs</span>
+                            <span> 요코하마</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE507"
+                    data-title="라쿠텐 vs 요미우리">
+                    <div class="sport_channel_6 horizon_block">LIVE507</div>
+                    <div class="sport_channel_2 horizon_block">06-05 18:00</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/4.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>라쿠텐 </span>
+                            <span>vs</span>
+                            <span> 요미우리</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE510"
+                    data-title="오릭스 vs 한신">
+                    <div class="sport_channel_6 horizon_block">LIVE510</div>
+                    <div class="sport_channel_2 horizon_block">06-05 18:00</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/4.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>오릭스 </span>
+                            <span>vs</span>
+                            <span> 한신</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE506"
+                    data-title="소프트뱅크 vs 야쿠르트">
+                    <div class="sport_channel_6 horizon_block">LIVE506</div>
+                    <div class="sport_channel_2 horizon_block">06-05 18:00</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/4.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>소프트뱅크 </span>
+                            <span>vs</span>
+                            <span> 야쿠르트</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE565"
+                    data-title="2018 프랑스오픈 테니스 8강 (tv)">
+                    <div class="sport_channel_6 horizon_block">LIVE565</div>
+                    <div class="sport_channel_2 horizon_block">06-05 18:00</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/9.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>2018 프랑스오픈 테니스 8강 (tv)</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE513"
+                    data-title="한화 vs LG">
+                    <div class="sport_channel_6 horizon_block">LIVE513</div>
+                    <div class="sport_channel_2 horizon_block">06-05 18:30</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/4.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>한화 </span>
+                            <span>vs</span>
+                            <span> LG</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE514"
+                    data-title="롯데 vs NC">
+                    <div class="sport_channel_6 horizon_block">LIVE514</div>
+                    <div class="sport_channel_2 horizon_block">06-05 18:30</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/4.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>롯데 </span>
+                            <span>vs</span>
+                            <span> NC</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE515"
+                    data-title="삼성 vs SK">
+                    <div class="sport_channel_6 horizon_block">LIVE515</div>
+                    <div class="sport_channel_2 horizon_block">06-05 18:30</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/4.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>삼성 </span>
+                            <span>vs</span>
+                            <span> SK</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE516"
+                    data-title="두산 vs 넥센">
+                    <div class="sport_channel_6 horizon_block">LIVE516</div>
+                    <div class="sport_channel_2 horizon_block">06-05 18:30</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/4.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>두산 </span>
+                            <span>vs</span>
+                            <span> 넥센</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE512"
+                    data-title="KIA vs KT">
+                    <div class="sport_channel_6 horizon_block">LIVE512</div>
+                    <div class="sport_channel_2 horizon_block">06-05 18:30</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/4.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>KIA </span>
+                            <span>vs</span>
+                            <span> KT</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE553"
+                    data-title="대한민국 vs 태국">
+                    <div class="sport_channel_6 horizon_block">LIVE553</div>
+                    <div class="sport_channel_2 horizon_block">06-05 20:05</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/3.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>대한민국 </span>
+                            <span>vs</span>
+                            <span> 태국</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE554"
+                    data-title="브라질 vs 중국">
+                    <div class="sport_channel_6 horizon_block">LIVE554</div>
+                    <div class="sport_channel_2 horizon_block">06-05 20:30</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/3.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>브라질 </span>
+                            <span>vs</span>
+                            <span> 중국</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                            <li class="ch1_select channel_item ch1_on horizon_block_wrap" data-stream="LIVE555"
+                    data-title="세르비아 vs 이탈리아">
+                    <div class="sport_channel_6 horizon_block">LIVE555</div>
+                    <div class="sport_channel_2 horizon_block">06-05 23:30</div>
+                    <div class="sport_channel_1 horizon_block">
+                                                    <img class=""
+                                 src="./assets/images/jm/3.png">                    </div>
+                    <div class="sport_channel_3 horizon_block">
+                                                                            <span>세르비아 </span>
+                            <span>vs</span>
+                            <span> 이탈리아</span>
+                                            </div>
+                    <div class="sport_channel_4 horizon_block">
+                        &nbsp;
+                    </div>
+                    <div class="sport_channel_5  horizon_block">
+                        <div class="channel_off">방송전</div>                    </div>
+                </li>
+                    </ul>
+    </section>
+</main>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/jwplayer-8.2.0/jwplayer.js"></script>
+<script>jwplayer.key = "IDY3Ayw0Y+71ncijS4obL/OF8vMuNVByRgIiuheuHHc=";</script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            var selected_channel = null;
+            var tmp_el = null;
+
+                        channel_init("1");
+            
+            function channel_init(num) {
+                $("#player" + num + "_stream").prepend('<img id="secure_img_' + num + '" src="http://221.163.163.178:1935/sjp/live01/image.gif" width="0" height="0">');
+                $(".player_title").html("JTBC");
+                setTimeout(function () {
+                    var player = jwplayer("player" + num);
+                    player.setup({
+                        file: "http://www.pickcom.co.kr:1935/sjp/live01/playlist.m3u8?site=cooltv&ch=live01&pm=P",
+                        width: "100%",
+                                                aspectratio: "16:9",
+                        autostart: true                                            }).on("ready", function () {
+                        if ($(window.parent.document).find("#player").length !== 0) {
+                            $(window.parent.document).find("#player")[0].height = document.body.scrollHeight;
+                        }
+                    });
+
+                    $(".ch" + num + "_select").click(function () {
+                        $(".ch" + num + "_select").each(function () {
+                            $(this).removeClass("active")
+                        });
+                        $(this).addClass("active");
+                        if (tmp_el) tmp_el.find("img").attr("src", "assets/images/channel/" + tmp_el.attr("data-title") + "_on.png");
+                        tmp_el = $(this).closest("a");
+                        var channel_num = $(this).attr("data-stream");
+                        var channel_title = $(this).attr("data-title");
+                        selected_channel = channel_title;
+                        $(".player_title").html(channel_title);
+                        $("#secure_img_" + num).remove();
+                        $("#player" + num + "_stream").prepend('<img id="secure_img_' + num + '" src="http://221.163.163.178:1935/sjp/' + channel_num + '/image.gif" width="0" height="0">');
+                        setTimeout(function () {
+                            player.load([{
+                                file: "http://www.pickcom.co.kr:1935/sjp/" + channel_num + "/playlist.m3u8?site=40tv&ch=" + channel_num + "&pm=P",
+                            }]);
+                            player.play();
+                        }, 0);
+                    });
+                }, 0)
+            }
+
+            $(".live_channel_list_item").mouseover(function () {
+                var $this = $(this).find("a");
+                $(this).find("img").attr("src", "assets/images/channel/" + $this.attr("data-title") + ".png")
+            }).mouseout(function () {
+                var $this = $(this).find("a");
+                if (selected_channel !== $this.attr("data-title")) {
+                    $(this).find("img").attr("src", "assets/images/channel/" + $this.attr("data-title") + "_on.png")
+                }
+            })
+        });
+    })(jQuery);
+</script></body>
+</html> 

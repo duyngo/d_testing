@@ -1,0 +1,420 @@
+/*/*init*/
+/*body {
+    font-size: 13px;
+    background: #f4f4f4;
+	
+}*/
+
+img {
+    display: block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.ui-widget.ui-widget-content, .ui-corner-all, .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border-radius: 0;
+    border: none;
+}
+
+.ui-tabs .ui-tabs-nav, .ui-tabs .ui-tabs-panel, .ui-widget.ui-widget-content, .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    padding: 0;
+}
+
+.ui-tabs .ui-tabs-panel {
+    border-right: 1px solid #c6c6c6;
+    border-left: 1px solid #c6c6c6;
+    border-bottom: 1px solid #c6c6c6;
+}
+
+.ui-tabs .ui-tabs-nav {
+    height: 32px;
+    line-height: 32px;
+    font-weight: bold;
+    border: 1px solid #c6c6c6;
+}
+
+.ui-tabs .ui-tabs-nav li, .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    margin: 0;
+}
+
+.ui-tab {
+    width: 50%;
+    text-align: center;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    float: none;
+    padding: 0;
+    width: 100%;
+    display: block;
+    font-weight: bold;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    background: #c4c4c4;
+}
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+    color: #000;
+}
+
+.horizon_block_wrap:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.horizon_block {
+    float: left;
+}
+
+/*.container {
+    width: 829px;
+    margin: 0 auto;
+}*/
+
+.player_title {
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #595a5c 0%, #2f3439 22%, #21272d 35%, #21272d 80%, #293039 100%) repeat scroll 0 0;
+    border-color: #595a5c #1c1c20 #1a1d20 #444;
+    border-style: solid;
+    border-width: 1px;
+    color #fff !important;
+}
+
+.live_channel_wrap {
+    margin: 5px 0 0 0;
+    color: #fff;
+    font-size: 13px;
+    /* background: rgba(0, 92, 153, 0.5); */
+    /*background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #1e262d 0%, #1e262d 60%, #213950 100%) repeat scroll 0 0;*/
+    background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+    /*border-color: #42494f #1c1c20 #1a1d20 #42494f;
+    border-style: solid;
+    border-width: 1px;*/
+    padding: 10px;
+}
+
+.live_channel_list_item {
+    position: relative;
+    width: 12.5%
+    /*color: #fff;
+    padding: 7px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;*/
+    /*border-radius: 5px;*/
+}
+
+.live_channel_list_item > img {
+    width: 100%;
+    box-shadow: 5px 5px 5px #000;
+}
+
+.live_channel_select_wrap {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.channel_num_select_wrap {
+    margin: 5px 0 0 0;
+}
+
+.channel_num_select_item {
+    width: 25%;
+}
+.channel_num_select_item img{
+    width: 100%;
+}
+.btn-ask-black.btn-full{
+    width:100%;
+    padding: 9px 10px !important;
+    margin: 0px !important;
+}
+.active.btn.btn-ask-black.btn-full{
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #213950 0%, #213950 30%, #1e262d 100%) repeat scroll 0 0;
+}
+
+/*.channel_num_select_item a {*/
+/*padding: 8px 0 4px 0;*/
+/*margin-right: -1px;*/
+/*display: flex;*/
+/*align-items: center;*/
+/*justify-content: center;*/
+/*border: 1px solid #c6c6c6;*/
+/*font-weight: bold;*/
+/*color: #000;*/
+/*}*/
+
+/*.channel_num_select_item a.active {
+    background: #c4c4c4;
+}
+
+.channel_num_select_item a:hover {
+    background: #c4c4c4;
+}*/
+
+/*.media_1ch_wrap {
+    width: 100%;
+}
+
+.media_2ch_wrap {
+    width: 50%;
+}*/
+
+.sport_channel_wrap {
+    margin: 5px 0 0 0;
+    border: 1px solid #c6c6c6;
+}
+
+.sport_category_wrap {
+    margin: 5px 0 0 0;
+}
+
+/*.sport_category_item {
+    position: relative;
+    width: 9.09%;
+    text-align: center;
+}*/
+.sport_category_item{
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(#1e262d 0%, #1e262d 60%, #213950 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -o-linear-gradient(#1e262d 0%, #1e262d 60%, #213950 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(#1e262d 0%, #1e262d 60%, #213950 100%) repeat scroll 0 0;
+    border-color: #42494f #1c1c20 #1a1d20 #42494f !important;
+    border-style: solid !important;
+    border-width: 1px !important;
+    margin-top: 0px !important;
+    overflow: hidden;
+}
+
+/*.sport_category_item a {
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #c6c6c6;
+    margin-right: -1px;
+    transition: background-color 0.2s ease;
+}*/
+
+.sport_category_item a {
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid #c6c6c6;*/
+    margin-right: -1px;
+    transition: background-color 0.2s ease;
+}
+
+.sport_category_item a:hover {
+    background-color: #e82d0c;
+    box-shadow: inset 0 0 15px 0;
+}
+
+.sport_category_1 {
+    background: url("../../stream-image/images/live-ca1.png");
+    width: 51px;
+    height: 53px;
+}
+
+.sport_category_2 {
+    background: url("../../stream-image/images/live-ca2.png");
+    width: 69px;
+    height: 39px;
+}
+
+.sport_category_3 {
+    background: url("../../stream-image/images/live-ca3.png");
+    width: 67px;
+    height: 36px;
+}
+
+.sport_category_4 {
+    background: url("../../stream-image/images/live-ca4.png");
+    width: 70px;
+    height: 44px;
+}
+
+.sport_category_5 {
+    background: url("../../stream-image/images/live-ca5.png");
+    width: 70px;
+    height: 39px;
+}
+
+.sport_category_6 {
+    background: url("../../stream-image/images/live-ca6.png");
+    width: 70px;
+    height: 40px;
+}
+
+.sport_category_7 {
+    background: url("../../stream-image/images/live-ca7.png");
+    width: 70px;
+    height: 42px;
+}
+
+.sport_category_8 {
+    background: url("../../stream-image/images/live-ca8.png");
+    width: 41px;
+    height: 43px;
+}
+
+.sport_category_9 {
+    background: url("../../stream-image/images/live-ca9.png");
+    width: 41px;
+    height: 43px;
+}
+
+.sport_category_10 {
+    background: url("../../stream-image/images/live-ca10.png");
+    width: 44px;
+    height: 44px;
+}
+
+.sport_category_11 {
+    background: url("../../stream-image/images/live-ca11.png");
+    width: 44px;
+    height: 44px;
+}
+
+.sport_category_count {
+    content: '';
+    position: absolute;
+    background-color: #e82d0c;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    padding: 2px 5px;
+    top: 2px;
+    right: 2px;
+    font-size: 12px;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.channel_item {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px solid #c6c6c6;
+}
+
+.channel_item:hover {
+    background: #c6c6c6;
+}
+
+.channel_item.ch1_on:hover{
+    cursor: pointer;
+}
+
+.channel_item.ch1_on.active{
+    background: #c6c6c6;
+}
+
+.channel_on, .channel_off {
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    border: 1px solid #c6c6c6;
+    margin: 4px;
+}
+.channel_on {
+    color: #fff;
+    background: #c90d25;
+}
+
+.sport_channel_1 {
+    width: 4%;
+}
+
+.sport_channel_1 img {
+    width: 25px;
+    margin-top: 6px;
+    margin-left: 3px;
+}
+
+.sport_channel_2 {
+    width: 10%;
+    text-align: center;
+}
+
+.sport_channel_3 {
+    width: 53%;
+}
+
+.sport_channel_4 {
+    width: 15%;
+}
+
+.sport_channel_5 {
+    width: 10%;
+    text-align: center;
+}
+
+.sport_channel_6 {
+    width: 8%;
+    text-align: left;
+    text-indent: 5px;
+}
+
+.channel_select_item {
+    width: 25%;
+}
+
+.ch_select{
+    display: inline-block;
+    padding: 2px;
+    border: 1px solid #c6c6c6;
+    line-height: normal;
+    background: #c90d25;
+    text-align: center;
+}
+
+.ch_select.active {
+    background: white;
+}
+
+.ch_select:hover {
+    background: white;
+}
+
+.live_channel_1 {
+    text-indent: 5px;
+    width: 85%;
+}
+
+.live_channel_2 {
+    width: 15%;
+}
+
+.channel_img {
+    width: 30px;
+    height: 21px;
+}
+.jwplayer{
+    border: 1px solid #d5d5d5 !important;
+}
+.video-chanel-container{
+    margin: 5px 0 0 0;
+    padding:15px;
+    background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+    overflow:hidden;
+}
