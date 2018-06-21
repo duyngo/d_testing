@@ -59,9 +59,9 @@ if(isset($_POST)){
 		$list_response_id = implode(",",$list_response_id);
 
 		if($list_response_id){
-			$res = $User->query("SELECT * FROM `tblbonuscomment` WHERE `userId`='" . $_POST['id'] . "' AND `id` NOT IN ($list_response_id) AND `isRecommanded` = 'Y' AND `checkUser` = 'N'");
+			$res = $User->query("SELECT * FROM `tblBonusComment` WHERE `userId`='" . $_POST['id'] . "' AND `id` NOT IN ($list_response_id) AND `isRecommanded` = 'Y' AND `checkUser` = 'N'");
 		}else{
-			$res = $User->query("SELECT * FROM `tblbonuscomment` WHERE `userId`='" . $_POST['id'] . "' AND `isRecommanded` = 'Y' AND `checkUser` = 'N'");
+			$res = $User->query("SELECT * FROM `tblBonusComment` WHERE `userId`='" . $_POST['id'] . "' AND `isRecommanded` = 'Y' AND `checkUser` = 'N'");
 		}
 
 
@@ -73,7 +73,7 @@ if(isset($_POST)){
 						$bonusName = $val13['bonusName'];
 					}
 
-					echo '<a href="sports-details/'.$val13["id"].'/'.$bonusName.'">
+					echo '<a href="bonus-details/'.$val13["id"].'/'.$bonusName.'">
 										<div class="row content">
 											<p class="text-white">Admin</p>
 											<p class="text-yellow">Verified your Comment posted on '.$bonusName.'</p>

@@ -14,6 +14,7 @@ $Common = new Common();
 $ids = array();
 if(isset($_POST)){
 	$res = $User->query("SELECT `id` FROM `tblNewsComment` WHERE `userId`='" . $_POST['id'] . "'");
+	//var_dump($res);
 	$list_response_id = array();
 	if(is_array($res) && count($res) > 0){
 		foreach ($res as $idx => $val) {
@@ -33,7 +34,7 @@ if(isset($_POST)){
 									$name = $val12['siteName'];
 								}
 							}
-							$res13 = $User->query("SELECT * FROM `tblnewsblog` WHERE `id` = '" . $value['categoryId'] . "'");
+							$res13 = $User->query("SELECT * FROM `tblNewsBlog` WHERE `id` = '" . $value['categoryId'] . "'");
 							if(is_array($res13) && count($res13) > 0){
 								foreach ($res13 as $key => $val13) {
 									$newsName = $val13['title'];
@@ -55,7 +56,7 @@ if(isset($_POST)){
 	}
 	//check nofitfy for user when Admin accepted verify comment
 	$list_response_id = implode(",",$list_response_id);
-
+	//echo $list_response_id;
 	if($list_response_id){
 		$res = $User->query("SELECT * FROM `tblNewsComment` WHERE `userId`='" . $_POST['id'] . "' AND `id` NOT IN ($list_response_id) AND `isRecommanded` = 'Y' AND `checkUser` = 'N'");
 	}else{
@@ -65,8 +66,10 @@ if(isset($_POST)){
 
 	if(is_array($res) && count($res) > 0) {
 		foreach ($res as $idx => $val) {
-			$res13 = $User->query("SELECT * FROM `tblnewsblog` WHERE `id` = '" . $val['newsId'] . "'");
+			//var_dump($res);
+			$res13 = $User->query("SELECT * FROM `tblNewsBlog` WHERE `id` = '" . $val['newsId'] . "'");
 			if(is_array($res13) && count($res13) > 0){
+				//var_dump($res13);
 				foreach ($res13 as $key => $val13) {
 					$newsName = $val13['title'];
 				}
