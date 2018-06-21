@@ -266,7 +266,7 @@ $codeencrypt = base64_encode(base64_encode($lid.'##'.$gid.'##'.$tid['token'].'##
 										<li><a href="site-comments.php">사이트 후기</a></li>
 										<li><a href="siteComplaints.php">사이트 분쟁</a></li>
 										<?php
-										}else if($userid[0]['groupId'] == 3){
+										}else if(in_array($userid[0]['groupId'],[3,4])){
 											$siteUserLogin = $_SESSION['siteUserLogin'] = true;	
 										}
 										?>

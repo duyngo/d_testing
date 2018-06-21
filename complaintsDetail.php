@@ -587,6 +587,7 @@ if(isset($_POST) && is_array($_POST) && count($_POST) > 0 && isset($_POST['ident
 						 if($logedInID == $_SESSION['value'][0]['userId']){
 
 						 	$User->query("UPDATE `tblComplaintsResponse` SET `checkUser` = 'Y' WHERE `complaintId` = '" . $_SESSION['value'][0]['id'] . "'");
+							 $User->query("UPDATE `tblcomplaints` SET `checkUser` = 'Y' WHERE `id` = '" . $_SESSION['value'][0]['id'] . "'");
 
 						?>
 
