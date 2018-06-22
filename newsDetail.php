@@ -587,7 +587,7 @@ if(isset($_POST) && is_array($_POST) && count($_POST) > 0){
 
 
 
-											if($userid[0]['userId'] != $value['userId']){
+											if($userid[0]['userId'] == $value['userId']){
 
 												$User->query("UPDATE `tblCommentResponse` SET `checkUser` = 'Y' WHERE `responseId`='". $request_id ."' AND `categoryId` = '" . $reqID[1] . "' AND `isVerified`='Y' AND `category`='4'");
 												$User->query("UPDATE `tblNewsComment` SET `checkUser` = 'Y' WHERE `id` = $request_id");

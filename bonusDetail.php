@@ -989,8 +989,8 @@ if(isset($_POST) && is_array($_POST) && count($_POST) > 0 && isset($_POST['_COMM
 
 									</form>
 
+								</div>
 									<?php
-
 							}else{
 
 								?>
@@ -1002,7 +1002,7 @@ if(isset($_POST) && is_array($_POST) && count($_POST) > 0 && isset($_POST['_COMM
 
 								
 
-							</div>
+
 						</div>
 
 						<div class="ask-page-content ask-land-page-content">
@@ -1446,6 +1446,7 @@ if(isset($_POST) && is_array($_POST) && count($_POST) > 0 && isset($_POST['_COMM
 
 								?>	
 
+								</div>
 							</div>
 
 						</div><!-- bonus code landing-->
