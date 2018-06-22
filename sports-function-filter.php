@@ -298,8 +298,9 @@ $pagination = '';
 									<div class="cardReview text-center text-black">
 
 										<div class="rating padding-5 font16">
+										<p class="text-black" style="margin-bottom:2px;">'.$value['extraText'].'</p>
 
-											'.$ratinCon.'
+
 
 										</div>
 
