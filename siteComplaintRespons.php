@@ -42,11 +42,11 @@ if(isset($_POST) && is_array($_POST) && count($_POST) > 0){
 									<div class="content">
 										<div class="arrow-content">
 											<?php
-											$res = $User->query("SELECT `id`, `userId` FROM `tblUser` WHERE `id` = '" . $value['userId'] . "'");
+											$res = $User->query("SELECT `id`, `userId`, `nickName` FROM `tblUser` WHERE `id` = '" . $value['userId'] . "'");
 											if(is_array($res) && count($res) > 0){
 												foreach ($res as $index => $val) {
 											?>
-											<h5 class="page-header comment-preview-header margin-top-0"><span class="text-yellow"><?php echo $val['userId']; ?></span> 님께서 분쟁해결 신청을 하셨습니다. <a href="http://<?php echo $value['link']; ?>" target="_blank"><span class="text-success text-uppercase"> <?php echo $value['siteName']; ?></span></a></h5>
+											<h5 class="page-header comment-preview-header margin-top-0"><span class="text-yellow"><?php echo $val['nickName']; ?></span> 님께서 분쟁해결 신청을 하셨습니다. <a href="http://<?php echo $value['link']; ?>" target="_blank"><span class="text-success text-uppercase"> <?php echo $value['siteName']; ?></span></a></h5>
 											<?php
 												}
 											}
@@ -102,7 +102,7 @@ if(isset($_POST) && is_array($_POST) && count($_POST) > 0){
 											<div class="content">
 												<div class="arrow-content">
 													<?php
-													$res = $User->query("SELECT `id`, `groupId`, `siteName`, `userId` FROM `tblUser` WHERE `id` = '" . $response['userId'] . "'");
+													$res = $User->query("SELECT `id`, `groupId`, `siteName`, `userId`,`nickName` FROM `tblUser` WHERE `id` = '" . $response['userId'] . "'");
 													if(is_array($res) && count($res) > 0){
 														foreach ($res as $index => $val) {
 															if($val['groupId'] == 0){
@@ -110,7 +110,7 @@ if(isset($_POST) && is_array($_POST) && count($_POST) > 0){
 															}else if($val['groupId'] == 2){
 																$name = $val['siteName'];
 															}else{
-																$name = $val['userId'];
+																$name = $val['nickName'];
 															}
 													?>
 													<h5 class="page-header comment-preview-header margin-top-0"><span class="text-yellow text-uppercase"><?php echo $name; ?></span> </h5>

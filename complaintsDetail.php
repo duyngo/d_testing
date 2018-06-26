@@ -584,10 +584,13 @@ if(isset($_POST) && is_array($_POST) && count($_POST) > 0 && isset($_POST['ident
 
 						$logedInID = (int)User::loggedInUserId() > 0 ? User::loggedInUserId() : 0;
 
-						 if($logedInID == $_SESSION['value'][0]['userId']){
+						 if($logedInID == $_SESSION['value'][0]['userId'] || $siteAdminLogin){
 
-						 	$User->query("UPDATE `tblComplaintsResponse` SET `checkUser` = 'Y' WHERE `complaintId` = '" . $_SESSION['value'][0]['id'] . "'");
-							 $User->query("UPDATE `tblComplaints` SET `checkUser` = 'Y' WHERE `id` = '" . $_SESSION['value'][0]['id'] . "'");
+							 if($logedInID == $_SESSION['value'][0]['userId']){
+								 $User->query("UPDATE `tblComplaintsResponse` SET `checkUser` = 'Y' WHERE `complaintId` = '" . $_SESSION['value'][0]['id'] . "'");
+								 $User->query("UPDATE `tblComplaints` SET `checkUser` = 'Y' WHERE `id` = '" . $_SESSION['value'][0]['id'] . "'");
+							 }
+
 
 						?>
 
@@ -604,6 +607,7 @@ if(isset($_POST) && is_array($_POST) && count($_POST) > 0 && isset($_POST['ident
 											<input type="hidden" name="complaintId" value="<?php echo $_SESSION['value'][0]['id']; ?>" />
 
 											<input type="hidden" name="id" value="<?php echo $complaintUserId[0]['id']; ?>" />
+
 											<textarea id="editor1" name="responsText" placeholder="Type your text here...">
 
 											  </textarea>
