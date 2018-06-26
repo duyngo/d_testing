@@ -2365,9 +2365,9 @@ class Card extends Base {
 
                 $fieldArray['userId'] = $logedInID;
 
-           }else if($userInfo[0]['groupId'] == 3){
+           }else if($userInfo[0]['groupId'] == 3 || $userInfo[0]['groupId'] == 4){
 
-                $fieldArray['siteName'] = '';
+                $fieldArray['siteName'] = 'User';
 
                 $fieldArray['userId'] = ((int)User::loggedInUserId() > 0 ? User::loggedInUserId() : 0);
 
