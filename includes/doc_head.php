@@ -173,6 +173,9 @@ $codeencrypt = base64_encode(base64_encode($lid.'##'.$gid.'##'.$tid['token'].'##
 	background: linear-gradient(to right, rgba(104,224,44,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68e02c', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 }
+.wysiwyg-editor{
+	min-height:100px !important;
+}
 </style>
 </head>
 <body>

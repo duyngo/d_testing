@@ -52,11 +52,11 @@ if ( $groupId[0]['groupId'] != 2) {
 									<div class="content">
 										<div class="arrow-content">
 											<?php
-											$res = $User->query("SELECT `id`, `userId` FROM `tblUser` WHERE `id` = '" . $value['userId'] . "'");
+											$res = $User->query("SELECT `id`, `userId`,`nickName` FROM `tblUser` WHERE `id` = '" . $value['userId'] . "'");
 											if(is_array($res) && count($res) > 0){
 												foreach ($res as $index => $val) {
 											?>
-											<h5 class="page-header comment-preview-header margin-top-0"><span class="text-yellow"><?php echo $val['userId']; ?></span> 님께서 분쟁해결 신청을 하셨습니다. <a href="<?php echo $value['link']; ?>" target="_blank"><span class="text-success text-uppercase"> <?php echo $value['siteName']; ?></span></a>
+											<h5 class="page-header comment-preview-header margin-top-0"><span class="text-yellow"><?php echo $val['nickName']; ?></span> 님께서 분쟁해결 신청을 하셨습니다. <a href="<?php echo $value['link']; ?>" target="_blank"><span class="text-success text-uppercase"> <?php echo $value['siteName']; ?></span></a>
 											<?php 
 											if($value['checkSiteAdmin'] == 'Y'){
 											echo '<button type="button" class="btn-checked pull-right" disabled><i class="fa fa-check-circle" aria-hidden="true"></i> 확인한</button>';
