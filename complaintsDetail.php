@@ -441,11 +441,11 @@ if(isset($_POST) && is_array($_POST) && count($_POST) > 0 && isset($_POST['ident
 
 												$icon = $User->query("SELECT `groupId`, `nickName`, `siteName`, `profile_img` FROM `tblUser` WHERE `id` = '" . $val['userId'] . "'");
 
-												if($icon[0]['groupId'] == 3){
+												if($icon[0]['groupId'] == 3 || $icon[0]['groupId'] == 4){
 
 													$n = $icon[0]['nickName'];
 													$UsrEditPost = true;
-													echo '<img src="images/user/default_user.png" class="user-complaint img-circle" alt="" title="'.$complaintUserId[0]["nickName"].'" />';
+													echo '<img src="images/user/default_user_0.png" class="user-complaint img-circle" alt="" title="'.$complaintUserId[0]["nickName"].'" />';
 
 												} else if($icon[0]['groupId'] == 2){ 
 
